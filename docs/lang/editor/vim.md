@@ -334,7 +334,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 就安装好了。
 
-vim-plug 可以很轻松的管理插件，只需要在配置中写一下，并在 Vim 中执行 `:PlugInstall` 命令，就可以自动从 github 上拉取插件，当然也拉取不了 github 上没有的。而如果不想用了什么插件也无须删去，在配置中注释掉那个插件的相关就行了。具体配置请移步配置篇，此处将会详细介绍我的各个插件。
+vim-plug 可以很轻松的管理插件，只需要在配置中写一下，并在 Vim 中执行 `:PluginInstall` 命令，就可以自动从 github 上拉取插件，当然也拉取不了 github 上没有的。而如果不想用了什么插件也无须删去，在配置中注释掉那个插件的相关就行了。具体配置请移步配置篇，此处将会详细介绍我的各个插件。
 
 #### 文件管理
 
@@ -504,7 +504,7 @@ inoremap 快捷键 指令
 首先我的个人快捷键需求其实不是很多，我的<kbd>leader</kbd>键是<kbd>\`</kbd>，但是处于一种坐冷板凳的状态，就更新插件的时候用一用，不过还是很方便的，我的设置是：
 
 ```vim
-nnoremap <leader><leader>i :PlugInstall<CR>
+nnoremap <leader><leader>i :PluginInstall<CR>
 ```
 
  `<CR>` 代表回车。设置之后只需要连续按<kbd> `` i</kbd>即可更新插件，很方便。
@@ -627,7 +627,7 @@ call plug#end()
 Plug '作者 Github 上的名字/Github 上的插件仓库名'
 ```
 
-写完保存后进入 Vim，使用 `:PlugInstall` 即可自动开始安装。
+写完保存后进入 Vim，使用 `:PluginInstall` 即可自动开始安装。
 
 我的插件列表：
 
